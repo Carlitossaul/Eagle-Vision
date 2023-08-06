@@ -26,8 +26,6 @@ const Home = () => {
     }
   };
 
-  console.log(loading);
-
   return (
     <div className={styles.home}>
       <h1>Veja os nossos posts mais recentes</h1>
@@ -49,7 +47,10 @@ const Home = () => {
             </Link>
           </div>
         )}
-        {posts && posts.map((post) => <PostDetail key={post.id} post={post} />)}
+        {posts &&
+          posts
+            .slice(0, 30)
+            .map((post) => <PostDetail key={post.id} post={post} />)}
       </div>
     </div>
   );
