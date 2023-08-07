@@ -1,13 +1,18 @@
+:root {
+  --white: #fcfcfe;
+  --yellow: #ffd63f;
+}
+
 body {
   background-color: #f6fcff;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Times New Roman";
 }
 
 input::placeholder,
 textarea::placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Times New Roman";
 }
 
 input:focus,
@@ -24,7 +29,7 @@ nav button {
   transition: 0.4s;
   font-size: 1em;
   cursor: pointer;
-  font-family: "Montserrat", sans-seri;
+  font-family: "Times New Roman";
 }
 
 a:hover,

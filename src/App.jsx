@@ -24,6 +24,7 @@ import EditPost from "./pages/EditPost/EditPost";
 
 // context
 import { AuthProvider } from "./contexts/AuthContext";
+import Landing from "./pages/Landing/Landing";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -48,7 +49,8 @@ function App() {
           <Navbar />
           <div className="container">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Landing />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route
                 path="/posts/create"
