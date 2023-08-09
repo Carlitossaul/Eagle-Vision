@@ -25,25 +25,25 @@ const Home = () => {
       return navigate(`/search?q=${query}`);
     }
   };
-
+  console.log(posts);
   return (
     <div className={styles.home}>
-      <h1>Veja os nossos posts mais recentes</h1>
+      <h1>Check out our most recent posts</h1>
       <form className={styles.search_form} onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Ou busque por tags..."
+          placeholder="Or search by tags..."
           onChange={(e) => setQuery(e.target.value)}
         />
-        <button className="btn">Pesquisar</button>
+        <button className="btn">Search</button>
       </form>
       <div className="post-list">
-        {loading && <p>Carregando...</p>}
+        {loading && <p>Loading...</p>}
         {posts && posts.length === 0 && (
           <div className={styles.noposts}>
-            <p>Não foram encontrados posts</p>
+            <p>No posts were found</p>
             <Link to="/posts/create" className="btn">
-              Criar primeiro post
+              Create first post
             </Link>
           </div>
         )}

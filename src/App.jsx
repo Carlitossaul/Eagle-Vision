@@ -21,6 +21,7 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import EditPost from "./pages/EditPost/EditPost";
+import ScrollToTop from "./components/ScrollToTop";
 
 // context
 import { AuthProvider } from "./contexts/AuthContext";
@@ -39,7 +40,7 @@ function App() {
   }, [auth]);
 
   if (loadingUser) {
-    return <p>Carregando...</p>;
+    return <p>Loading...</p>; //cambiar a img
   }
 
   return (
@@ -68,7 +69,7 @@ function App() {
               />
               <Route
                 path="/register"
-                element={!user ? <Register /> : <Navigate to="/" />}
+                element={!user ? <Register /> : <Navigate to="/home" />}
               />
               <Route
                 path="/dashboard"
@@ -77,6 +78,7 @@ function App() {
             </Routes>
           </div>
           <Footer />
+          <ScrollToTop />
         </BrowserRouter>
       </AuthProvider>
     </div>
