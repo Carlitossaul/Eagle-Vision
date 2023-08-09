@@ -5,6 +5,7 @@ import { useAuthentication } from "../hooks/useAuthentication";
 import { useAuthValue } from "../contexts/AuthContext";
 
 import styles from "./Navbar.module.css";
+import img from "../assets/logoEagleVision.png";
 
 const Navbar = () => {
   const { logout } = useAuthentication();
@@ -15,12 +16,12 @@ const Navbar = () => {
     location.pathname !== "/" && (
       <nav className={styles.navbar}>
         <NavLink className={styles.brand} to="/">
-          Mini <span>Blog</span>
+          <img className={styles.img} src={img} />
         </NavLink>
         <ul className={styles.links_list}>
           <li>
             <NavLink
-              to="/"
+              to="/home"
               className={({ isActive }) => (isActive ? styles.active : "")}
             >
               Home
@@ -33,7 +34,7 @@ const Navbar = () => {
                   to="/login"
                   className={({ isActive }) => (isActive ? styles.active : "")}
                 >
-                  Entrar
+                  Login
                 </NavLink>
               </li>
               <li>
@@ -41,7 +42,7 @@ const Navbar = () => {
                   to="/register"
                   className={({ isActive }) => (isActive ? styles.active : "")}
                 >
-                  Cadastrar
+                  Register
                 </NavLink>
               </li>
             </>
@@ -53,7 +54,7 @@ const Navbar = () => {
                   to="/posts/create"
                   className={({ isActive }) => (isActive ? styles.active : "")}
                 >
-                  Novo post
+                  New post
                 </NavLink>
               </li>
               <li>
@@ -71,12 +72,14 @@ const Navbar = () => {
               to="/about"
               className={({ isActive }) => (isActive ? styles.active : "")}
             >
-              Sobre
+              About
             </NavLink>
           </li>
           {user && (
             <li>
-              <button onClick={logout}>Sair</button>
+              <button className={styles.button} onClick={logout}>
+                Logout
+              </button>
             </li>
           )}
         </ul>

@@ -1,7 +1,19 @@
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
 .login {
   text-align: center;
+  background-color: rgba(75, 75, 73, 0.8);
+  width: 50%;
+  padding: 2em;
+  border-top: 18px solid var(--yellow);
+  border-radius: 2px;
 }
 
 .login p {
-  color: #aaa;
+  color: var(--white);
 }

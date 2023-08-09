@@ -1,13 +1,25 @@
-.about {
+.container {
   text-align: center;
+  background-color: rgba(75, 75, 73, 0.8);
+  padding: 2em;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5em;
+}
+
+.about {
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 60%;
 }
 
 .about p {
-  color: #aaa;
-  margin-bottom: 2em;
+  color: var(--white);
+  margin-bottom: 0.5em;
 }
 
 .about a {

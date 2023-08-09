@@ -1,5 +1,5 @@
 .landing {
-  background-image: url("../../assets/eagle2.jpg");
+  /* background-image: url("../../assets/eagle2.jpg"); */
   width: 100%;
   height: 100vh;
   background-attachment: fixed;
@@ -10,49 +10,33 @@
   justify-content: right;
 }
 .container {
-  background-color: rgba(75, 75, 73, 0.6);
+  background-color: rgba(75, 75, 73, 0.8);
   display: flex;
   align-items: center;
   margin-right: 5em;
-  width: 45%;
+  width: 50%;
   height: auto;
   justify-content: center;
   flex-direction: column;
-  gap: 1em;
+  /* gap: 1em; */
   position: absolute;
   padding: 2em;
   border-top: 18px solid var(--yellow);
   border-radius: 2px;
 }
-
-.title {
-  font-weight: 700;
-  text-shadow: 0px 1px 2px black;
-  color: var(--white);
-  font-size: 40px;
-  text-align: center;
-}
-.button {
-  border-radius: 8px;
-  border: 1px solid #ff4c4c;
-
-  padding: 0.6em 1.2em;
-  font-size: 1.1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #232323;
-  color: #fff;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.divLoading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(75, 75, 73, 0.8); */
 }
 
-.button:hover {
-  border-color: green;
-  background-color: #333;
+.logo {
+  max-width: 20em;
 }
 
-.button:active {
-  background-color: #ff4c4c;
-  border-color: #ff4c4c;
-  color: #fff;
+.container p {
+  letter-spacing: 1px;
 }

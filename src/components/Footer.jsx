@@ -6,8 +6,7 @@ const Footer = () => {
   return (
     location.pathname !== "/" && (
       <footer className={styles.footer}>
-        <h3>Escreva sobre o que você tem interesse!</h3>
-        <p>Mini Blog &copy; 2022</p>
+        <p>&copy; 2023 Eagle Vision - Eleva tus Habilidades Blandas</p>
       </footer>
     )
   );

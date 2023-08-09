@@ -13,9 +13,14 @@
   margin-bottom: 2em;
 }
 
+.search_form input::placeholder {
+  color: #3b3a3a;
+}
+
 .search_form input {
   margin-right: 10px;
   width: 50%;
+  border-bottom: 1px solid #b6b1b1;
 }
 
 .noposts {
