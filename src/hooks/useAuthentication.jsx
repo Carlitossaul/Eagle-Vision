@@ -47,11 +47,11 @@ export const useAuthentication = () => {
       let systemErrorMessage;
 
       if (error.message.includes("Password")) {
-        systemErrorMessage = "A senha precisa conter pelo menos 6 caracteres.";
+        systemErrorMessage = "The password must be at least 6 characters long.";
       } else if (error.message.includes("email-already")) {
-        systemErrorMessage = "E-mail já cadastrado.";
+        systemErrorMessage = "Email already registered.";
       } else {
-        systemErrorMessage = "Ocorreu um erro, por favor tenta mais tarde.";
+        systemErrorMessage = "An error occurred, please try again later.";
       }
 
       setError(systemErrorMessage);
@@ -82,11 +82,11 @@ export const useAuthentication = () => {
       let systemErrorMessage;
 
       if (error.message.includes("user-not-found")) {
-        systemErrorMessage = "Usuário não encontrado.";
+        systemErrorMessage = "User not found.";
       } else if (error.message.includes("wrong-password")) {
-        systemErrorMessage = "Senha incorreta.";
+        systemErrorMessage = "Incorrect password.";
       } else {
-        systemErrorMessage = "Ocorreu um erro, por favor tenta mais tarde.";
+        systemErrorMessage = "An error occurred, please try again later.";
       }
 
       console.log(systemErrorMessage);

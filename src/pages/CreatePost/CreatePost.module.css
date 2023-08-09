@@ -10,7 +10,7 @@
 .create_post {
   text-align: center;
   background-color: rgba(75, 75, 73, 0.8);
-  width: 60%;
+  width: 65%;
   padding: 2em;
   border-top: 18px solid var(--yellow);
   border-radius: 2px;
@@ -18,6 +18,10 @@
 
 .create_post h2 {
   font-size: 2.2em;
+}
+
+.create_post textarea {
+  height: 12em;
 }
 
 .create_post p {

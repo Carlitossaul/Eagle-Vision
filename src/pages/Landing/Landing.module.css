@@ -20,7 +20,7 @@
   flex-direction: column;
   /* gap: 1em; */
   position: absolute;
-  padding: 2em;
+  padding: 1.5em;
   border-top: 18px solid var(--yellow);
   border-radius: 2px;
 }
@@ -38,5 +38,5 @@
 }
 
 .container p {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
