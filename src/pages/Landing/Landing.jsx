@@ -31,17 +31,16 @@ const Landing = () => {
             <div className={styles.info}>
               <p>
                 🦅 Welcome to Eagle Vision, where soft skills come to life. Find
-                inspiration in our articles and share your own perspectives.
+                inspiration in articles and share your own perspectives.
               </p>
               <p>
-                🌟 Our community invites you to explore topics like
-                communication, leadership, problem-solving, time management,
-                empathy, critical thinking, personal growth, and more...
+                🌟 I invite you to explore topics such as communication,
+                teamwork, leadership, problem-solving, time management, empathy,
+                critical thinking, proactivity, and more...
               </p>
               <p>
-                🤝 Join a diverse network of eager minds to learn and grow
-                together. Share your own insights and discover the collective
-                wisdom that will help you thrive.
+                🤝 Share your own knowledge and discover the collective wisdom
+                that will help you thrive.
               </p>
               <p>
                 🔍 Develop a sharp vision to spot opportunities and foster
@@ -49,10 +48,11 @@ const Landing = () => {
                 together.
               </p>
               <p>
-                🚀 Your journey to a better self starts here. Join us and gain
-                the perspective that will take you beyond your limits.
+                🚀 Unite and gain a perspective that will take you beyond your
+                limits.
               </p>
             </div>
+
             <Link to={"/home"}>
               <button className="btn">Start</button>
             </Link>

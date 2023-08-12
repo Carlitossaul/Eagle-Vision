@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   margin-right: 5em;
-  width: 50%;
+  width: 45%;
   height: auto;
   justify-content: center;
   flex-direction: column;
@@ -34,9 +34,10 @@
 }
 
 .logo {
-  max-width: 20em;
+  max-width: 15em;
 }
 
 .container p {
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  font-size: 14px;
 }
