@@ -39,3 +39,45 @@
   max-width: 100%;
   margin-bottom: 1em;
 }
+
+@media (max-width: 391px) {
+  .edit_post h2 {
+    font-size: 17px;
+  }
+  .edit_post p {
+    font-size: 13px;
+  }
+  .edit_post {
+    width: 95%;
+    height: auto;
+    padding: 5px;
+  }
+  .edit_post form {
+    margin: 0px;
+    min-width: 90%;
+  }
+  .edit_post span {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 391px) and (max-width: 768px) {
+  .edit_post h2 {
+    font-size: 17px;
+  }
+  .edit_post p {
+    font-size: 13px;
+  }
+  .edit_post {
+    width: 95%;
+    height: auto;
+    padding: 5px;
+  }
+  .edit_post form {
+    margin: 0px;
+    min-width: 90%;
+  }
+  .edit_post span {
+    font-size: 14px;
+  }
+}

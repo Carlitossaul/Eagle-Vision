@@ -1,7 +1,6 @@
 .container {
   text-align: center;
   background-color: rgba(75, 75, 73, 0.8);
-  padding: 2em;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -18,6 +17,7 @@
 }
 
 .about p {
+  text-align: left;
   color: var(--white);
   margin-bottom: 0.5em;
 }
@@ -26,4 +26,47 @@
   display: block;
   margin-top: 15px;
   padding: 10px 15px;
+}
+
+@media (max-width: 391px) {
+  .about {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+
+  .about h2 {
+    font-size: 17px;
+  }
+
+  .about p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 391px) and (max-width: 768px) {
+  .about {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+
+  .about h2 {
+    font-size: 17px;
+  }
+
+  .about p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Estilos para pantallas con ancho entre 768px y 992px */
+}
+
+@media (min-width: 992px) {
+  /* Estilos para pantallas con ancho mínimo de 992px */
 }

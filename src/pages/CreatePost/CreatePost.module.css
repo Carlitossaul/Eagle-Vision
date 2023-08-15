@@ -28,3 +28,52 @@
   color: var(--white);
   margin-bottom: 2em;
 }
+
+@media (max-width: 391px) {
+  .create_post h2 {
+    font-size: 17px;
+  }
+  .create_post p {
+    font-size: 13px;
+  }
+  .create_post {
+    width: 95%;
+    height: auto;
+    padding: 5px;
+  }
+  .create_post form {
+    margin: 0px;
+    min-width: 90%;
+  }
+  .create_post span {
+    font-size: 14px;
+  }
+}
+@media (min-width: 391px) and (max-width: 768px) {
+  .create_post h2 {
+    font-size: 17px;
+  }
+  .create_post p {
+    font-size: 13px;
+  }
+  .create_post {
+    width: 95%;
+    height: auto;
+    padding: 5px;
+  }
+  .create_post form {
+    margin: 0px;
+    min-width: 90%;
+  }
+  .create_post span {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Estilos para pantallas con ancho entre 768px y 992px */
+}
+
+@media (min-width: 992px) {
+  /* Estilos para pantallas con ancho mínimo de 992px */
+}
