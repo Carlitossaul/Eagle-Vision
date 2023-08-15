@@ -1,4 +1,7 @@
 import styles from "./About.module.css";
+import { FaLinkedin } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 
@@ -36,6 +39,43 @@ const About = () => {
         <Link to="/posts/create" className="btn">
           Create post
         </Link>
+        <h2 className={styles.aboutMe}>
+          About <span>me</span>
+        </h2>
+        <p>My name is Carlos Lovey. I am a Developer Web Full Stack</p>
+        <h2>Contact</h2>
+        <div className={styles.links}>
+          <a
+            target="_blank"
+            className={styles.link}
+            href="https://www.linkedin.com/in/carloslovey"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className={styles.icon} />
+            LinkedIn:My professional profile on LinkedIn, where you can find
+            information about my work experience and skills. Click here!
+          </a>
+          <a
+            target="_blank"
+            className={styles.link}
+            href="https://github.com/Carlitossaul"
+            rel="noopener noreferrer"
+          >
+            <AiFillGithub className={styles.icon} />
+            GitHub: "My GitHub profile, where I share some of my projects and
+            collaborations with the developer community. Click here!
+          </a>
+          <a
+            target="_blank"
+            className={styles.link}
+            href="https://carloslovey.vercel.app/"
+            rel="noopener noreferrer"
+          >
+            <BsBoxArrowUpRight className={styles.icon} />
+            Portfolio: My portfolio of projects, where you can see some of the
+            work I have done and my work style. Click here!
+          </a>
+        </div>
       </div>
     </div>
   );
