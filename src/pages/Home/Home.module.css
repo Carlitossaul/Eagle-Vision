@@ -37,7 +37,7 @@
 
 @media (max-width: 391px) {
   .home h1 {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .search_form {
@@ -53,6 +53,21 @@
   }
 }
 @media (min-width: 391px) and (max-width: 768px) {
+  .home h1 {
+    font-size: 16px;
+  }
+
+  .search_form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search_form input {
+    margin-right: 10px;
+    width: 40%;
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {

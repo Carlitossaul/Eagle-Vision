@@ -25,7 +25,7 @@ const Home = () => {
       return navigate(`/search?q=${query}`);
     }
   };
-  console.log(posts);
+
   return (
     <div className={styles.home}>
       <h1>Check out our most recent posts</h1>
